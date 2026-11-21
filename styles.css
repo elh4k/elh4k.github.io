@@ -308,9 +308,12 @@ a:hover {
 }
 
 @keyframes blink {
-	0%, 100% {
+
+	0%,
+	100% {
 		opacity: 1;
 	}
+
 	50% {
 		opacity: 0;
 	}
@@ -364,13 +367,20 @@ a:hover {
 }
 
 @keyframes hero-packet-travel {
-	0%, 100% {
+
+	0%,
+	100% {
 		opacity: 0;
 		transform: translate(0, 0);
 	}
-	12%, 36%, 64%, 88% {
+
+	12%,
+	36%,
+	64%,
+	88% {
 		opacity: 0.6;
 	}
+
 	50% {
 		opacity: 0;
 		transform: translate(var(--packet-x), var(--packet-y));
@@ -387,10 +397,13 @@ a:hover {
 }
 
 @keyframes hero-node-pulse {
-	0%, 100% {
+
+	0%,
+	100% {
 		opacity: 0.1;
 		transform: scale(1);
 	}
+
 	50% {
 		opacity: 0.22;
 		transform: scale(1.08);
@@ -560,7 +573,7 @@ a:hover {
 	gap: 22px;
 }
 
-.team-grid > .card {
+.team-grid>.card {
 	min-width: 0;
 	scroll-margin-top: 5rem;
 }
@@ -584,15 +597,15 @@ a:hover {
 		grid-template-columns: repeat(6, minmax(0, 1fr));
 	}
 
-	.team-grid > .card {
+	.team-grid>.card {
 		grid-column: span 2;
 	}
 
-	.team-grid > .card:nth-child(3n + 1):nth-last-child(2) {
+	.team-grid>.card:nth-child(3n + 1):nth-last-child(2) {
 		grid-column: 2 / span 2;
 	}
 
-	.team-grid > .card:nth-child(3n + 1):last-child {
+	.team-grid>.card:nth-child(3n + 1):last-child {
 		grid-column: 3 / span 2;
 	}
 }
@@ -613,7 +626,7 @@ a:hover {
 }
 
 /* Team cards */
-.team-grid > .card > .window__body {
+.team-grid>.card>.window__body {
 	padding: clamp(1rem, 1.55vw, 1.125rem);
 }
 
@@ -820,7 +833,7 @@ html:has(.dossier[open]) {
 	outline-offset: -2px;
 }
 
-.dossier__section + .dossier__section,
+.dossier__section+.dossier__section,
 .member__details .dossier__section {
 	margin-top: 14px;
 	padding-top: 14px;
@@ -886,7 +899,7 @@ html:has(.dossier[open]) {
 	color: var(--muted);
 }
 
-.achievements > li + li {
+.achievements>li+li {
 	margin-top: 6px;
 }
 
